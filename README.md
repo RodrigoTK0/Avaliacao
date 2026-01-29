@@ -1,31 +1,55 @@
 Pré-requisitos:
-1.PHP >= 8.2
-2.Composer
-3.Um servidor de banco de dados
+
+1. PHP >= 8.2
+
+2. Composer
+
+3. Um servidor de banco de dados
 
 Instalação:
-1.Clone o repositório ou baixe os arquivos:
-(git clone <url-do-seu-repositorio> 
+
+1. Clone o repositório ou baixe os arquivos:
+
+(git clone url-do-seu-repositorio
+
 cd nome-do-projeto)
-2.Instale as dependências:
+
+2. Instale as dependências:
+
 (composer install)
-3.Configure o ambiente:
+
+3. Configure o ambiente:
+
 (cp .env.example .env
+
 php artisan key:generate)
-4.Banco de Dados, abra o arquivo .env e configure seu banco:
+
+4. Banco de Dados, abra o arquivo .env e configure seu banco:
+
 (DB_CONNECTION=pgsql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=5432
+
 DB_DATABASE=nome_do_seu_banco
+
 DB_USERNAME=seu_usuario
+
 DB_PASSWORD=sua_senha)
-5.Rode as migrations
+
+5. Rode as migrations
+
 (php artisan migrate)
 
+
 Execução:
-1.Inicie o servidor local
+
+1. Inicie o servidor local
+
 (php artisan serve)
-2.Acesse no seu navegador: http://127.0.0.1:8000/startups
+
+2. Acesse no seu navegador: http://127.0.0.1:8000/startups
 
 ⚖️ LGPD e o Armazenamento de E-mails
 A Lei Geral de Proteção de Dados (Lei nº 13.709/2018) aplica-se ao seu formulário, pois o "e-mail de contato" é considerado um dado pessoal (informação relacionada a uma pessoa natural identificada ou identificável).
